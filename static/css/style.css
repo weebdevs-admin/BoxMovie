@@ -17,6 +17,7 @@ body {
 header {
   background-image: url(../../static/img/Poster.jpg);
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -171,10 +172,10 @@ header {
 
 
 .select-list {
-  width: 700px;
-  margin: 30px auto 30px;
+  width: 100%;
+  height: 90px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style-type: none;
   text-align: center;
 }
@@ -182,15 +183,14 @@ header {
 .select-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 
 }
 
 select {
   text-align: center;
-  width: 170px;
-  margin-top: 8px;
-  height: 25px;
+  width: 300px;
+  height: 40px;
   border-radius: 12px;
   padding: 0 15px;
   font-size: 16px;
@@ -226,10 +226,11 @@ select {
   padding: 1px;
   border: 1px solid #000;
   border-radius: 5px;
-  width: 250px;
-  height: 490px;
-
-  overflow: hidden;
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 0 10px black;
 }
 
 
@@ -242,5 +243,112 @@ select {
 .move__card img {
   width: 100%;
   height: 370px;
-  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.year_{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #797979;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.title_{
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cat_{
+  text-align: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #000;
+}
+.rayt_{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.wtch_{
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border: 1px solid #000;
+  padding: 10px;
+  color: white;
+  background-color: #ff7200;
+  border-radius: 5px;
+  border: none;
+}
+
+.bookmarks{
+  color: #fff;
+  font-size: 30px;
+  margin-left: 40px;
+  
+}
+.bookmarks:hover{
+  color: blue;
+  transition: all ease 0.5s;
+}
+.bookm{
+  cursor: pointer;
+  font-size: 18px;
+}
+.bookm:hover{
+  color: red;
+}
+
+.bookmark__open{
+  display: none;
+  overflow: auto;
+  width: 500px;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+}
+
+.book_img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  
+}
+
+.title__main{
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.cancel{
+  font-size: 40px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+.booklist{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.book_title{
+  text-align: center;
+  width: 250px;
+  overflow: auto;
+}
+.book_rating{
+  color: #797979;
+}
+.book_wtch{
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid rgb(9, 9, 197);
+  color: rgb(9, 9, 197) ;
+  border-radius: 5px;
+}
+.cancel:hover{
+  color: red;
 }
